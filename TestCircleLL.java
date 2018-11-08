@@ -1,4 +1,18 @@
-/** *  * Author: Brian Cabral * Date: 10/29/18 * Description: purpose of this lab is to run * some test with the nodes * */public class TestCircleLL {	public static void main( String[] args ) {		Circle c1 = new Circle( 3, 4, 2 );		Circle c3 = new Circle( 0, 0, 3 );		Circle c2 = new Circle( 6, 3, 4 );
+/**
+ * 
+ * Author: Brian Cabral
+ * Date: 10/29/18
+ * Description: purpose of this lab is to run
+ * some test with the nodes
+ *
+ */
+
+// HEllO
+public class TestCircleLL {
+	public static void main( String[] args ) {
+		Circle c1 = new Circle( 3, 4, 2 );
+		Circle c3 = new Circle( 0, 0, 3 );
+		Circle c2 = new Circle( 6, 3, 4 );
 		Circle c4 = new Circle( 1, 2, 5 );
 		Circle c5 = new Circle( 3, 4, 5 );
 		Circle c6 = new Circle( 1, 2, 6 );
@@ -12,11 +26,14 @@
 		if(list.isEmpty()){
 			System.out.println("2. CORRECT - Linked List constructed");
 		}
-		list.add( c1 );		list.add( 0, c2 );		list.add( c3 );
-		String s = "" + list;
+		list.add( c1 );
+		list.add( 0, c2 );
+		list.add( c3 );
+		String s = "" + list;
 		if(s.equals("(6,3) R = 4\n(3,4) R = 2\n(0,0) R = 3\n")){
 			System.out.println("3. CORRECT - All circles added");
-		}		
+		}
+		
 		if(list.size() == 3){
 			System.out.println("4. CORRECT - Size function works");
 		}
@@ -36,4 +53,6 @@
 		s = "" + list;
 		if(s.equals("(0,0) R = 3\n")){
 			System.out.println("7. CORRECT - Remove functions work");
-		}	}}
+		}
+	}
+}
